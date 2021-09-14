@@ -1,0 +1,552 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="621.5000000000007" scrolly="581" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="322.8442687988281" scrolly="815.5597534179688" scale="0.8655478265772731">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="]8l:bgH7R^pv`_ByG+m)" type="">hat_visible</variable>
+      <variable id="-{{li2W|1pm6(Qb8vQyc" type="">mask_design_1</variable>
+      <variable id="7*j3j%93P}vFel_hu6z`" type="">mask_design_2</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemStyle" id="SJSU0N*gvn}^njEpy(/e" x="470" y="-890">
+      <field name="PROPERTY">display</field>
+      <field name="PARENT">TRUE</field>
+      <value name="VALUE">
+        <block type="text" id="KURq9HmZO,=70JkC!AfI">
+          <field name="TEXT">block</field>
+        </block>
+      </value>
+      <value name="ID">
+        <block type="lists_create_with" id="b`PQu}2o8{N2CHMSs~P=">
+          <mutation items="2"/>
+          <value name="ADD0">
+            <block type="text" id="ilZxraGI2SG[c0QYBpMT">
+              <field name="TEXT">left_panel</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="text" id="q@31Y4?D=28M?Dam%5g)">
+              <field name="TEXT">right_panel</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="-_Ih@=TDYvSx^B-{DXEe" x="-170" y="-850">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="-(@1hm82l5YI./2LW64+">
+          <field name="TEXT">mask_hat_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="?~1^uYr[xO[8]xT6b!{c">
+          <mutation else="1"/>
+          <value name="IF0">
+            <block type="logic_compare" id="(Q__8}1lb$,?1|zp5~T0">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="!1=XX?usd3C}G_H1-dfl">
+                  <field name="VAR" id="]8l:bgH7R^pv`_ByG+m)">hat_visible</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="d(baq|Mw[VCPl9g2]epU">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="hide" id="G@DfZ^y==g%*$h9k/`ls">
+              <value name="VALUE">
+                <block type="objectList" id="I2g_(u(Htz?:Hx%jW;bN">
+                  <field name="FIELDNAME">Mask_design_hat</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="v/cN`xd}%Lum-H:bCO_c">
+                  <field name="VAR" id="]8l:bgH7R^pv`_ByG+m)">hat_visible</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="~2iLV;Fn~LiP;,ceP3-+">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="show" id="*z|AQiZx5_FbeUh[dTK@">
+              <value name="VALUE">
+                <block type="objectList" id="/L,PNNHb/5_(PxU):#If">
+                  <field name="FIELDNAME">Mask_design_hat</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="1WfQM?;T5k*-+iZsXg)A">
+                  <field name="VAR" id="]8l:bgH7R^pv`_ByG+m)">hat_visible</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="n[^N}{+/*i7hfwE2#e11">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Qk:ELD@:oIPC6hPTe2^+" x="490" y="-750">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="q:[Cxf=Z]Fy(Z1$k7lPE">
+          <field name="TEXT">colour_blue_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="c6D{Sy;Z%ri*M5?!jK04">
+          <value name="VALUE2">
+            <block type="materialList" id="DnTU1uiQ|LOttGO%%*)*">
+              <field name="FIELDNAME">material_two_blue_hat</field>
+            </block>
+          </value>
+          <value name="VALUE1">
+            <block type="objectList" id="c|T/HC*IvJ4:NLp7k4d$">
+              <field name="FIELDNAME">Mask_design_hat</field>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id="nc0=rGhB!@V_-.E*Kg~o">
+              <value name="VALUE2">
+                <block type="materialList" id="_Z.^#4A-e#q(N5dCh$OG">
+                  <field name="FIELDNAME">material_two_blue_mask</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="objectList" id="$UoUSwY3~JmVAxSg=nM.">
+                  <field name="FIELDNAME">Mask_design_1_mask</field>
+                </block>
+              </value>
+              <next>
+                <block type="assignMaterial" id="S[vUAy6BnH+a4v6mQZSc">
+                  <value name="VALUE2">
+                    <block type="materialList" id="#(;*xr}8;[;~[vu:|@CB">
+                      <field name="FIELDNAME">material_two_blue_mask</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <block type="objectList" id="T%B;L=%h,y@2Y-$7)0pH">
+                      <field name="FIELDNAME">Mask_design_2_mask</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="r`z61r^S)f-Trfda.;sP">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <block type="text" id="Fh7P.Mr^5k`4OA.O[mqn">
+              <field name="TEXT">colour_red_button</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="BmaX+41^~WlTdzj5*VRO">
+              <value name="VALUE2">
+                <block type="materialList" id="]3i`Q9cJ:+7RgvE*QR@I">
+                  <field name="FIELDNAME">material_two_red_hat</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="objectList" id="2Qin(VO6:.*-0aiSo5o|">
+                  <field name="FIELDNAME">Mask_design_hat</field>
+                </block>
+              </value>
+              <next>
+                <block type="assignMaterial" id="aHgvz4lEP*@*CxM}iN$?">
+                  <value name="VALUE2">
+                    <block type="materialList" id="yI-7BfOC;(7XcCRb@#NO">
+                      <field name="FIELDNAME">material_two_red_mask</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <block type="objectList" id="tcbkW+){?nf?hliU0Tzn">
+                      <field name="FIELDNAME">Mask_design_1_mask</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="V$kmG|BGJM?=OTtC5+|$">
+                      <value name="VALUE2">
+                        <block type="materialList" id="k+^?hE8W9f=(+fH-{7HI">
+                          <field name="FIELDNAME">material_two_red_mask</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <block type="objectList" id="dC;wv-O-RdcO:/kcD7t/">
+                          <field name="FIELDNAME">Mask_design_2_mask</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="65v6Pj+Bl4oZqRUlBVmf">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <block type="text" id="B[_1d[udVtbe):I]U.u{">
+                  <field name="TEXT">colour_yellow_button</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="!^wSt*L![9w7*RY%6=%c">
+                  <value name="VALUE2">
+                    <block type="materialList" id="OKa~KXj|*)IbsBQDyDZA">
+                      <field name="FIELDNAME">material_two_yellow_hat</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <block type="objectList" id="qz:Gy1_JF#$y947Aoq5w">
+                      <field name="FIELDNAME">Mask_design_hat</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id=".M-$bFP)FrcGDDZ_/5p9">
+                      <value name="VALUE2">
+                        <block type="materialList" id="D(mt-M|8UgKM?XvP%4*}">
+                          <field name="FIELDNAME">material_two_yelow_mask</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <block type="objectList" id="RO5]p[B@B]k/?d4O`(V`">
+                          <field name="FIELDNAME">Mask_design_1_mask</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="a/yfJT.a]hpMM2W}o4X7">
+                          <value name="VALUE2">
+                            <block type="materialList" id="XI6YO#T*g-M(Aw}PWfDa">
+                              <field name="FIELDNAME">material_two_yelow_mask</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <block type="objectList" id="pC5T|T)60ycPm-cOQCz,">
+                              <field name="FIELDNAME">Mask_design_2_mask</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="4cOh(dG(@akhJ=mR`~[Y">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <block type="text" id="Q!X46Un)?MJ.wr.x:IxQ">
+                      <field name="TEXT">colour_blue_button</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="assignMaterial" id="lL,.1{`K,[~;ft;kZ{u[">
+                      <value name="VALUE2">
+                        <block type="materialList" id="NY96)ys[adefiR4)I)JZ">
+                          <field name="FIELDNAME">material_one_blue_hat</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <block type="objectList" id="r=ohcrY9.zSEe:vy3*]k">
+                          <field name="FIELDNAME">Mask_design_hat</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="@R0LFnZl(2AXqN;bg}Ea">
+                          <value name="VALUE2">
+                            <block type="materialList" id="O_DG-yRI0IXY7kZpHcnE">
+                              <field name="FIELDNAME">material_one_blue_mask</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <block type="objectList" id="@GyOzz-:4g9`-s5vPGSx">
+                              <field name="FIELDNAME">Mask_design_1_mask</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="a.i^bjPm2S/wNTAe4F{7">
+                              <value name="VALUE2">
+                                <block type="materialList" id="vV4xcbduDs,]ccVa~}{r">
+                                  <field name="FIELDNAME">material_two_blue_mask</field>
+                                </block>
+                              </value>
+                              <value name="VALUE1">
+                                <block type="objectList" id="y~*ZS(K~SQ=?p6ph`bq9">
+                                  <field name="FIELDNAME">Mask_design_2_mask</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="L@-#(M|Gb*^s5`[_v{`i">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <block type="text" id="3houBhcv0)9[J+4KeC,%">
+                          <field name="TEXT">colour_red_button</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="assignMaterial" id="J6Jl=bc5[0|w81[Okoa0">
+                          <value name="VALUE2">
+                            <block type="materialList" id="srKoERj?,CFs4hdN9hPw">
+                              <field name="FIELDNAME">material_one_red_hat</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <block type="objectList" id="PdfwFp;wH^d6NLbxp!_?">
+                              <field name="FIELDNAME">Mask_design_hat</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="q|Y(dKHMO6V;Q22*AI*S">
+                              <value name="VALUE2">
+                                <block type="materialList" id="Vx93EcKWOK]Fo+Xr/M0o">
+                                  <field name="FIELDNAME">material_one_red_mask</field>
+                                </block>
+                              </value>
+                              <value name="VALUE1">
+                                <block type="objectList" id="O[zj2!Ln^-~x8pHhkBhu">
+                                  <field name="FIELDNAME">Mask_design_1_mask</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="(.[%^Ma_uGf]x$h.~fNu">
+                                  <value name="VALUE2">
+                                    <block type="materialList" id="@O+u)EsbOr])UnE;3*!D">
+                                      <field name="FIELDNAME">material_two_red_mask</field>
+                                    </block>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <block type="objectList" id="rW[xdK.KyXJidf5er~4;">
+                                      <field name="FIELDNAME">Mask_design_2_mask</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="eventHTMLElem" id="0hV+??k_Lu^XDG[W|X88">
+                          <field name="EVENT">click</field>
+                          <field name="PARENT">TRUE</field>
+                          <value name="ID">
+                            <block type="text" id="uxkn-WB6OEz;FucLRHb%">
+                              <field name="TEXT">colour_yellow_button</field>
+                            </block>
+                          </value>
+                          <statement name="DO">
+                            <block type="assignMaterial" id="sJ47,+{pOc0u%r,f?1kd">
+                              <value name="VALUE2">
+                                <block type="materialList" id="W4lOPI(b/dGjAHr1+!e0">
+                                  <field name="FIELDNAME">material_one_yellow_hat</field>
+                                </block>
+                              </value>
+                              <value name="VALUE1">
+                                <block type="objectList" id="NZI}qYR;hfBIq%[BKo(A">
+                                  <field name="FIELDNAME">Mask_design_hat</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="A4jc,tqv,QR[;GN,)Ryz">
+                                  <value name="VALUE2">
+                                    <block type="materialList" id="fIX~?+R9*_j~-8*g%YvK">
+                                      <field name="FIELDNAME">material_one_yellow_mask</field>
+                                    </block>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <block type="objectList" id="sGI:n1%HT0-|J(taaRu;">
+                                      <field name="FIELDNAME">Mask_design_1_mask</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="14+iwq`]`^+zB[g+hd+!">
+                                      <value name="VALUE2">
+                                        <block type="materialList" id="IOeV8vcAzI/#F+hTOP;^">
+                                          <field name="FIELDNAME">material_two_yelow_mask</field>
+                                        </block>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <block type="objectList" id="mo[l;lv?O?UT)avbi4[(">
+                                          <field name="FIELDNAME">Mask_design_2_mask</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="y(o|C(VRQFc9m8Qv*gfZ" x="-170" y="-470">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="JRgAPr)jH1hT~[$~|Kxz">
+          <field name="TEXT">mask_design_one_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="ClL3BhlN}?EY585=kPl|">
+          <mutation else="1"/>
+          <value name="IF0">
+            <block type="logic_compare" id="9n,!.BFT9P~GWkHQe8X`">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="`U(V)1_6u-#d(qjJ=5l(">
+                  <field name="VAR" id="-{{li2W|1pm6(Qb8vQyc">mask_design_1</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="!hnW4AB2*NwL;mI`(H^k">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="hide" id="zwh;e7V,lcAGRs@[2aLt">
+              <value name="VALUE">
+                <block type="objectList" id="0)k48J7xaFOeq8^$/b0v">
+                  <field name="FIELDNAME">Mask_design_1_mask</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="FHK!fJ|co=q!^Bg5n8Ua">
+                  <field name="VAR" id="-{{li2W|1pm6(Qb8vQyc">mask_design_1</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="j)fV;T`7OEpy#p^SIZ/(">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="show" id="s4NlN(D1:38UhUP}s#e;">
+              <value name="VALUE">
+                <block type="objectList" id="tIsBLIbt{s(8#3|U0i#L">
+                  <field name="FIELDNAME">Mask_design_2_mask</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="#`u#c04B3PjRl@KN|5|)">
+                  <field name="VAR" id="-{{li2W|1pm6(Qb8vQyc">mask_design_1</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="kquxng3v*)ZZhrN)aY00">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="zi5:Fx#e1yU_7(Sik2u6" x="-170" y="-210">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="HZs@8RQr0|BW;8s0*7U@">
+          <field name="TEXT">mask_design_two_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="1A:#44Bi-j%sCRhPkU|S">
+          <mutation else="1"/>
+          <value name="IF0">
+            <block type="logic_compare" id="t[A_{rTFN7t|N_sdd=De">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="f)i|{bv*%P}-j-XiT]u#">
+                  <field name="VAR" id="7*j3j%93P}vFel_hu6z`">mask_design_2</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="uHFOWWe,qS0Kidu7#ZD#">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="hide" id="BL?$_KbDA+MmZ$QA{~*A">
+              <value name="VALUE">
+                <block type="objectList" id="fS1-oOLYXs0LQ2~d;Lvi">
+                  <field name="FIELDNAME">Mask_design_2_mask</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id=",IWi%uXNF~%0t)uK|b3%">
+                  <field name="VAR" id="7*j3j%93P}vFel_hu6z`">mask_design_2</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="S,LEG]RmhmYP6Z7=J*$#">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="show" id="E8;U-:107$`2n/9@TXQi">
+              <value name="VALUE">
+                <block type="objectList" id="ql:*E$bc=zQiV@5sIhf#">
+                  <field name="FIELDNAME">Mask_design_1_mask</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="ut5L=/*WvG}_L[9ux$Lb">
+                  <field name="VAR" id="7*j3j%93P}vFel_hu6z`">mask_design_2</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="([b`q%mTUhQ;^p`Rs0Kk">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1684.8" viewport-y="127" viewport-w="565.2" viewport-h="619" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

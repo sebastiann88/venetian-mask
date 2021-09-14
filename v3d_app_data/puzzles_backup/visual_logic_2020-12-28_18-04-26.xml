@@ -1,0 +1,104 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="621.5000000000002" scrolly="581" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="634.50634765625" scrolly="621.9406127929688" scale="0.9358235040610849">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemStyle" id="SJSU0N*gvn}^njEpy(/e" x="-590" y="-390">
+      <field name="PROPERTY">display</field>
+      <field name="PARENT">TRUE</field>
+      <value name="VALUE">
+        <block type="text" id="KURq9HmZO,=70JkC!AfI">
+          <field name="TEXT">block</field>
+        </block>
+      </value>
+      <value name="ID">
+        <block type="lists_create_with" id="b`PQu}2o8{N2CHMSs~P=">
+          <mutation items="2"/>
+          <value name="ADD0">
+            <block type="text" id="ilZxraGI2SG[c0QYBpMT">
+              <field name="TEXT">left_panel</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="text" id="q@31Y4?D=28M?Dam%5g)">
+              <field name="TEXT">right_panel</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="4cOh(dG(@akhJ=mR`~[Y" x="-590" y="-270">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="Q!X46Un)?MJ.wr.x:IxQ">
+          <field name="TEXT">colour_blue_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="lL,.1{`K,[~;ft;kZ{u[">
+          <value name="VALUE2">
+            <block type="materialList" id="NY96)ys[adefiR4)I)JZ">
+              <field name="FIELDNAME">material_blue_hat</field>
+            </block>
+          </value>
+          <value name="VALUE1">
+            <block type="objectList" id="r=ohcrY9.zSEe:vy3*]k">
+              <field name="FIELDNAME">Mask_blue_hat</field>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id="@R0LFnZl(2AXqN;bg}Ea">
+              <value name="VALUE2">
+                <block type="materialList" id="O_DG-yRI0IXY7kZpHcnE">
+                  <field name="FIELDNAME">material_blue_mask</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="objectList" id="@GyOzz-:4g9`-s5vPGSx">
+                  <field name="FIELDNAME">Mask_blue_mask</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Y!GSaL|FY*fiW]5-~6Q0" x="-590" y="-90">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="bBUpSjF:i;QMz;B+jLMa">
+          <field name="TEXT">colour_red_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="Q5703bP@Mp:md=7u%x{o">
+          <value name="VALUE2">
+            <block type="materialList" id="-{;a39TG1VVr+$KO}@mF">
+              <field name="FIELDNAME">material_red_hat</field>
+            </block>
+          </value>
+          <value name="VALUE1">
+            <block type="objectList" id="Luwohb,j33FcoBykyoLd">
+              <field name="FIELDNAME">Mask_blue_hat</field>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id="oW8(FTt~?()fj*{b;SGa">
+              <value name="VALUE2">
+                <block type="materialList" id="12oM?b.W546k@wfejr^R">
+                  <field name="FIELDNAME">material_red_mask</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="objectList" id="cyK]_piOi5{aczSG_=.O">
+                  <field name="FIELDNAME">Mask_blue_mask</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1034.8" viewport-y="40" viewport-w="565.2" viewport-h="619" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

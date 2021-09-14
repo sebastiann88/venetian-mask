@@ -1,0 +1,283 @@
+.html-embed {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  width: 80px;
+  height: 80px;
+  margin-top: 230px;
+  background-color: transparent;
+  background-image: url('../images/Venetian-design-two.svg');
+  background-position: 50% 50%;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.button.hat {
+  margin-top: 0px;
+  background-color: transparent;
+  background-image: url('../images/venetian-hat.svg');
+  background-position: 50% 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.button.venetian-design-one {
+  margin-top: 110px;
+  background-color: transparent;
+  background-image: url('../images/Venetian-design-one.svg');
+  background-position: 50% 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.button.venetian-design-two {
+  margin-top: 220px;
+  background-size: auto 100%;
+}
+
+.button.colour-yellow {
+  margin-top: 220px;
+  background-image: url('../images/color-yellow.svg');
+  background-position: 50% 50%;
+  background-size: auto 100%;
+}
+
+.button.colour-red {
+  margin-top: 110px;
+  background-color: transparent;
+  background-image: url('../images/color-red.svg');
+  background-position: 50% 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.button.colour-blue {
+  margin-top: 0px;
+  background-color: transparent;
+  background-image: url('../images/color-blue.svg');
+  background-position: 50% 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.left-panel {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  display: none;
+  width: 0px;
+  height: 300px;
+  margin-top: 0px;
+  margin-bottom: 150px;
+  margin-left: 10px;
+}
+
+.left-panel-position {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  display: block;
+  width: 0px;
+  height: 50%;
+  margin-top: 300px;
+}
+
+.right-panel-position {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  display: block;
+  width: 0px;
+  height: 50%;
+  margin-top: 300px;
+  margin-left: 0px;
+}
+
+.right-panel {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  display: none;
+  width: 0px;
+  height: 300px;
+  margin: 0px 0px 150px -100px;
+  padding-right: 0px;
+}
+
+@media screen and (max-width: 991px) {
+  .button.hat {
+    background-image: url('../images/venetian-hat.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .button.venetian-design-one {
+    background-size: 100%;
+  }
+
+  .button.venetian-design-two {
+    background-size: 100%;
+  }
+
+  .button.colour-yellow {
+    background-size: 100%;
+  }
+
+  .button.colour-red {
+    background-size: 100%;
+  }
+
+  .button.colour-blue {
+    background-size: 100%;
+  }
+
+  .left-panel {
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    display: none;
+    margin-left: 10px;
+  }
+
+  .right-panel-position {
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+  }
+
+  .right-panel {
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    display: none;
+    margin-left: -100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button.hat {
+    width: 60px;
+    height: 60px;
+  }
+
+  .button.venetian-design-one {
+    width: 60px;
+    height: 60px;
+    margin-top: 80px;
+  }
+
+  .button.venetian-design-two {
+    width: 60px;
+    height: 60px;
+    margin-top: 160px;
+  }
+
+  .button.colour-yellow {
+    width: 60px;
+    height: 60px;
+    margin-top: 160px;
+  }
+
+  .button.colour-red {
+    width: 60px;
+    height: 60px;
+    margin-top: 80px;
+  }
+
+  .button.colour-blue {
+    width: 60px;
+    height: 60px;
+  }
+
+  .left-panel {
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    display: none;
+    height: 280px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    margin-left: 8px;
+  }
+
+  .left-panel-position {
+    margin-top: 300px;
+  }
+
+  .right-panel-position {
+    margin-top: 300px;
+    margin-bottom: 0px;
+  }
+
+  .right-panel {
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    display: none;
+    height: 280px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    margin-left: -82px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .html-embed {
+    display: block;
+  }
+
+  .left-panel {
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    display: none;
+    height: 280px;
+    margin-left: 6px;
+  }
+
+  .left-panel-position {
+    margin-top: 300px;
+  }
+
+  .right-panel-position {
+    margin-top: 300px;
+  }
+
+  .right-panel {
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    display: none;
+    height: 280px;
+    margin-left: -80px;
+  }
+}

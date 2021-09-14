@@ -1,0 +1,30 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="621.4999999999998" scrolly="581" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="621.5" scrolly="580.9999999999994" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemStyle" id="SJSU0N*gvn}^njEpy(/e" x="-590" y="-390">
+      <field name="PROPERTY">display</field>
+      <field name="PARENT">TRUE</field>
+      <value name="VALUE">
+        <block type="text" id="KURq9HmZO,=70JkC!AfI">
+          <field name="TEXT">block</field>
+        </block>
+      </value>
+      <value name="ID">
+        <block type="lists_create_with" id="b`PQu}2o8{N2CHMSs~P=">
+          <mutation items="2"/>
+          <value name="ADD0">
+            <block type="text" id="ilZxraGI2SG[c0QYBpMT">
+              <field name="TEXT">left_panel</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="text" id="q@31Y4?D=28M?Dam%5g)">
+              <field name="TEXT">right_panel</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1034.8" viewport-y="40" viewport-w="565.2" viewport-h="619" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
